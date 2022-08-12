@@ -2,8 +2,10 @@ body {
     font-family: 'Overpass', sans-serif;
     background-color: #f8f7f3;
 }
+
 header {
     position: fixed;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,3 +29,101 @@ header {
         padding-top: 6px;
         font-size: 24px
 }
+
+#cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 120px auto;
+
+    max-width: 1280px;
+
+    row-gap: 100px;
+    column-gap: 20px;
+}
+
+.card {
+    position: relative;
+    width: 387px;
+
+    padding: 40px;
+    border: solid 2px #1a24fb;
+
+    background-color: #f8f7f3;
+    color: #1a24fb;
+
+    text-align: left;
+}
+
+.number {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+
+    width: 40px;
+    height: 40px;
+
+    padding-top: 3px;
+
+    background-color: #f8f7f3;
+    color: #1a24fb;
+
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.sub {
+    margin: 10px 0 20px;
+
+    font-size: 12px;
+    font-weight: 400;
+
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.title {
+    min-height: 100px;
+
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.text {
+    min-height: 180px;
+
+    font-size: 16px;
+    font-weight: 400; /*a fealadat szerint regular, ami 400, de a példán 700-nak, boldnak tűnik*/
+}
+
+button {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    right: 0;
+    bottom: -30px;
+
+    width: 100%;
+    height: 18px;
+
+    color: #1a24fb;
+    font-size: 14px;
+}
+  button:hover {
+    background-color: #1a24fb;
+    color: #f8f7f3;
+
+    cursor: pointer;
+  }
+  button > span {
+    font-size: 18px;
+    margin-left: 35px;
+  }
